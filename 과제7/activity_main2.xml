@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Main2Activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="서울 대기질 정보"
+        android:textSize="20dp"
+        android:layout_margin="50dp"
+        android:id="@+id/date_seoul_info"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이산화질소 농도(ppm) : "
+            android:layout_margin="20dp"
+            android:layout_alignBaseline="@id/date_NO2"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/date_NO2"
+            android:text="NO2"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/date_seoul_info"
+            android:layout_toRightOf="@id/date_seoul_info"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="오존 농도(ppm) : "
+            android:layout_margin="20dp"
+            android:layout_alignBaseline="@id/date_O3"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/date_O3"
+            android:text="O3"
+            android:layout_marginTop="40dp"
+            android:layout_alignLeft="@id/date_NO2"
+            android:layout_below="@id/date_NO2"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="일산화탄소 농도(ppm) : "
+            android:layout_margin="20dp"
+            android:layout_alignBaseline="@id/date_CO"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/date_CO"
+            android:text="CO"
+            android:layout_marginTop="40dp"
+            android:layout_alignLeft="@id/date_NO2"
+            android:layout_below="@id/date_O3"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아황산가스 농도(ppm) : "
+            android:layout_margin="20dp"
+            android:layout_alignBaseline="@id/date_SO2"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/date_SO2"
+            android:text="SO2"
+            android:layout_marginTop="40dp"
+            android:layout_alignLeft="@id/date_NO2"
+            android:layout_below="@id/date_CO"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="미세먼지(㎍/㎥) : "
+            android:layout_margin="20dp"
+            android:layout_alignBaseline="@id/date_fine_dust"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/date_fine_dust"
+            android:text="fine dust"
+            android:layout_marginTop="40dp"
+            android:layout_alignLeft="@id/date_NO2"
+            android:layout_below="@id/date_SO2"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="초미세먼지(㎍/㎥) : "
+            android:layout_margin="20dp"
+            android:layout_alignBaseline="@id/date_fine_particulate_matter"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/date_fine_particulate_matter"
+            android:text="fine particulate matter"
+            android:layout_marginTop="40dp"
+            android:layout_alignLeft="@id/date_NO2"
+            android:layout_below="@id/date_fine_dust"
+            />
+</RelativeLayout>

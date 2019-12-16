@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Main3Activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="서울 대기질 정보"
+        android:textSize="20dp"
+        android:layout_margin="50dp"
+        android:id="@+id/today_seoul_info"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="미세먼지(㎍/㎥) : "
+        android:layout_margin="20dp"
+        android:layout_alignBaseline="@id/today_fine_dust"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/today_fine_dust"
+        android:text="fine dust"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/today_seoul_info"
+        android:layout_toRightOf="@id/today_seoul_info"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="초미세먼지(㎍/㎥) : "
+        android:layout_margin="20dp"
+        android:layout_alignBaseline="@id/today_fine_particulate_matter"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/today_fine_particulate_matter"
+        android:text="fine particulate matter"
+        android:layout_marginTop="40dp"
+        android:layout_alignLeft="@id/today_fine_dust"
+        android:layout_below="@id/today_fine_dust"
+        />
+
+</RelativeLayout>
